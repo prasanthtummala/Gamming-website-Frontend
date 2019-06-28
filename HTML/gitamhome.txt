@@ -1,0 +1,49 @@
+
+<html>
+<head>
+<title>GITAM University</title>
+<style>
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: tomato;
+
+}
+
+</style>
+</head>
+<body background="E:\shad@34\1215316634\login1.jpeg">
+<p>
+<img  src="E:\1215316634\gitam-logo.png"  alt="gitam-logo"  width="250"  height="150">
+
+	<ul>
+  <li><a class="active" href="http://www.gitam.edu/"><i>Home</i></a></li>
+  <li><a href="file:///E:/shad@34/1215316634/ayyo.html"><i>login</i></a></li>
+  <li><a href="file:///E:/1215316634/exp1_3.html"><i>Register</i></a></li>
+  <li><a href="file://E:/shad@34/1215316634/Catalog.html"><i>Catalogue</i></a></li>
+  <li><a href=""><i>Cart</i></a></li>
+  <li><a href="#news"><i>News</i></a></li>
+  <li><a href="#contact"><i>Contact</i></a></li>
+  <li><a href="#about"><i>About</i></a></li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400|Raleway:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+
+        	 body {
+		 	
+     margin: 0;
+    font-weight: 300;
+    font-family: "roboto", sans-serif;
+    padding: 0;
+    background-color: black;
+    background-image: url("lbg.jpg");
+    background-size: cover;
+
+    
+
+
+
+}
+
+#navbar {
+  z-index: 100;
+  background-color: transparent;
+  height: 9%;
+  position: fixed;
+  
+  width: 100%;
+  display: block;
+  
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding-left:13px;
+  padding-top: 18px;
+  padding-right: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: lighter;
+  translate: transform .2s;
+  overflow: hidden;
+}
+
+#navbar a:hover {
+  transform: scale(1.1,1.1);
+  transition: width 0.01s;
+}
+
+#navbar img {
+
+  float: left;
+  display: block;
+  padding-left:15px;
+  text-decoration: none;
+  translate: transform .2s;
+  overflow: hidden;
+  position: relative;
+}
+
+.login a {
+     
+    float: left;
+  display: block;
+  color: red;
+  text-align: center;
+  /*padding-left:13px;
+  padding-top: 18px;
+  padding-right: 6px;*/
+  text-decoration: none;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: lighter;
+  translate: transform .2s;
+  overflow: hidden;
+  padding-right: 20px;
+
+} 
+
+.login a:hover{
+
+	transform: scale(1.1,1.1);
+    transition: width 0.01s;
+    text-decoration: underline;
+}
+
+.login{
+
+	padding-top: 140px;
+	padding-left: 400px;
+}
+
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 40%;
+  margin-bottom: 15px;
+
+}
+
+.icon {
+  padding: 10px;
+  background: red;
+  color: white;
+  min-width: 25px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border-radius: 10px;
+  border-width: 0px;
+  margin-left: 4px;
+}
+
+
+.btn {
+  background-color: red;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  opacity: 0.9;
+  border-radius: 10px;
+  outline: none;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+
+
+
+    </style>
+</head>
+
+
+<body>
+
+<div id="navbar">
+  <img src="E:\HTML\praslogo1.png" width="90" height="60" align="center" alt="logo">
+  <a href="#home">HOME</a>
+  <a href="#GAMES">GAMES</a>
+  <a href="#CAREERS">CAREERS</a>
+  <a href="#COMMUNITY">COMMUNITY</a>
+  <a href="#support">SUPPORT</a>
+ 
+  
+  
+  
+</div>
+<div class="login">
+<form style="align-content: left;">
+	
+		
+		<a href="#login">Login</a>
+		<a href="reg">Registration</a><br><br>
+	
+	<div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input class="input-field" type="text" placeholder="Username" name="usrnm">
+  </div>
+
+  <div class="input-container">
+    <i class="fa fa-envelope icon"></i>
+    <input class="input-field" type="text" placeholder="Email" name="email">
+  </div>
+  
+  <div class="input-container">
+    <i class="fa fa-key icon"></i>
+    <input class="input-field" type="password" placeholder="Password" name="psw">
+  </div>
+  
+  <a href="#fg" style="font-size: 12px">forgot password?</a><br>
+  <button type="submit" class="btn">Login</button>
+  
+
+</form>
+
+</div>
+
+</body>
+</html>

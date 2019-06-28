@@ -1,0 +1,833 @@
+<html>
+<head>
+	<title>
+		PVT GAMING
+	</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400|Raleway:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		
+		 body {
+		 	
+     margin: 0;
+    font-weight: 300;
+    font-family: "roboto", sans-serif;
+    padding: 0;
+
+
+
+}
+
+#navbar {
+  z-index: 100;
+  background-color: black;
+  height: 9%;
+  position: fixed;
+  top: -60px;
+  width: 100%;
+  display: block;
+  transition: top 0.6s;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding-left:13px;
+  padding-top: 18px;
+  padding-right: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: lighter;
+  translate: transform .2s;
+  overflow: hidden;
+}
+
+#navbar a:hover {
+  transform: scale(1.1,1.1);
+  transition: width 0.01s;
+}
+
+#navbar img {
+
+  float: left;
+  display: block;
+  padding-left:15px;
+  text-decoration: none;
+  translate: transform .2s;
+  overflow: hidden;
+  position: relative;
+  width: 70px;
+  height: 40px;
+  margin-top: 10px;
+}
+#navbar.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}
+
+    .video-container {
+z-index: -100;
+width:100%;
+height:100%;
+overflow:hidden;
+position:absolute;
+top:0;
+left:0;
+filter:opacity(50%);
+/*background-attachment: fixed;*/
+
+}
+
+#video-bg{
+  width:100%;
+ 
+}
+
+#logo
+{
+display:inline-block;
+}
+   
+ .cool::after{
+      content: "";
+      display: block;
+      width: 0;
+      height: 2px;
+      background: none;
+      transition: width 0.7s ;
+
+
+      }
+    .cool:hover::after{
+      width: 100%;
+
+      
+
+      
+    }
+
+    .section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.section h1 {
+  
+  color: #fff;
+  mix-blend-mode: color;
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  padding: 16px;
+  
+  font-family: "Oswald", sans-serif;
+
+  font-size: 90px;
+  margin: 0;
+  
+ 
+}
+h1 {
+  -webkit-text-stroke: 1px white;
+      text-shadow: 0 4px 18px rgba(0,0,0,.6);
+}
+
+
+.section h3 {
+  
+  color: #fff;
+  mix-blend-mode: color;
+  position: absolute;
+  top: 37%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  padding: 17px;
+  
+  font-family: "Oswald", sans-serif;
+
+  font-size: 20px;
+  margin: 0;
+}
+
+h3 {
+  -webkit-text-stroke: 1px white;
+      text-shadow: 0 4px 18px rgba(0,0,0,.6);
+}
+
+.section p {
+  
+  color: #fff;
+  mix-blend-mode: color;
+  position: absolute;
+  top: 42%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  padding: 17px;
+  
+  font-family: "Oswald", sans-serif;
+
+  font-size: 20px;
+  margin: 0;
+}
+
+p {
+  -webkit-text-stroke: 1px white;
+      text-shadow: 0 4px 18px rgba(0,0,0,.6);
+}
+
+.phase2{
+    
+    background-color: black; 
+	background-image: url("jc4.jpg");
+	background-repeat: round;
+	margin-top: 0;
+    position: relative;
+	height: 100%;
+	width: 100%
+
+
+}
+.phase2 h1{
+
+	font-family:'Nunito', sans-serif;
+	font-size: 45.784px;
+	color: white;
+	font-weight: 400;
+    line-height: 2;
+    font-weight: 300;
+    margin: 0px;
+    padding-top: 15;
+    padding-left: 17;
+
+}
+
+.phase2 h4{
+
+	font-family: "Blizzard", Helvetica, Arial, sans-serif;
+	font-size: 16.784px;
+	color: #61D2E8;
+	font-weight: 400;
+    line-height: 1.4;
+    font-weight: 300;
+    text-align: right;
+    text-decoration: none !important; 
+    transition: 0.3s;
+    text-align: right;
+
+
+
+}
+
+.phase2 h4:hover{
+
+	color: white;
+}
+
+
+.phase2 a{
+
+	text-decoration: none;
+
+}
+
+
+
+.container {
+  position: relative;
+  width: 200px;
+  display: inline-block;
+  margin: 20;
+}
+
+.image {
+  display: block;
+  width: 200px;
+  height: 250px;
+  
+}
+
+.overlay {
+	
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.5);
+  overflow: hidden;
+  width: 200px;
+  height: 0;
+  transition: .5s ease;
+
+  
+}
+
+.container:hover .overlay {
+  height: 250px;
+   box-shadow: 0px,4px,8px,0px,grey;
+}
+
+
+.text {
+	background-color: #b30000;
+    border-radius: 4px;
+  color: white;
+  font-size: 12px;
+  padding: 8px 16px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  
+}
+
+.text:hover{
+
+	background-color: red;
+}
+
+.text1 {
+	background-color: #b30000;
+    border-radius: 4px;
+  color: white;
+  font-size: 12px;
+  padding: 8px 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  
+}
+.text1:hover{
+
+	background-color: red;
+}
+
+.text3 h2{
+
+    z-index: +100;
+	color: : white;
+	font-size: 22px;
+}
+
+#phase3{
+    
+       
+	margin-top: 0;
+    position:relative;
+	height: 100%;
+	width: 100%;
+
+
+}
+#phase3 h1{
+
+	font-family:'Nunito', sans-serif;
+	font-size: 35.784px;
+	color: white;
+	font-weight: 400;
+    line-height: 2;
+    font-weight: 300;
+    margin: 0px;
+}
+
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-family:'Nunito', sans-serif;
+	font-size: 55.784px;
+	color: white;
+	font-weight: 400;
+    line-height: 2;
+    font-weight: 300;
+    margin: 0px;
+    margin-top: 140px;
+    margin-left: 40px;
+}
+
+.top-left1 {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-family:'Nunito', sans-serif;
+	font-size: 25.784px;
+	color: white;
+	font-weight: 400;
+    line-height: 2;
+    font-weight: 300;
+    margin: 0px;
+    margin-top: 230px;
+    margin-left: 43px;
+}
+
+.top-left2 {
+  background-color: #b30000;
+  border-radius: 3px;
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  padding: 2px 50px;
+  font-family:'Nunito', sans-serif;
+	font-size: 25.784px;
+	color: white;
+	font-weight: 400;
+    line-height: 2;
+    font-weight: 300;
+    margin: 0px;
+    margin-top: 290px;
+    margin-left: 48px;
+}
+
+.top-left2:hover{
+
+	background-color: red;
+}
+
+#phase4{
+    
+    background-color: black;   
+	margin-top: 0;
+    position:relative;
+	height: 100%;
+	width: 100%;
+
+}
+
+#phase4 .top-left2{
+
+	background-color: #b30000;
+  border-radius: 3px;
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  padding: 2px 50px;
+  font-family:'Nunito', sans-serif;
+	font-size: 25.784px;
+	color: white;
+	font-weight: 400;
+    line-height: 2;
+    font-weight: 300;
+    margin: 0px;
+    margin-top: 400px;
+    margin-left: 48px;
+
+
+}
+#phase4 .top-left2:hover{
+
+	background-color: red;
+}
+#phase5{
+    
+    background-color: black;
+       
+	margin-top:0;
+    position:relative;
+	height: 46%;
+	width: 100%;
+
+}
+#phase5 table{
+
+	padding: 70;
+	padding-top: 50;
+}
+
+
+#phase5 th{
+	font-size: 20px;
+	color:grey;
+	padding-left: 120px;
+	text-align: left;
+	text-decoration: underline;
+
+}
+#phase5 td{
+
+	font-size: 17px;
+	color:grey;
+	padding-left: 120px;
+	padding-top: 10px;
+	text-align: left;
+}
+
+#phase5 td:hover{
+
+	color:white;
+}
+
+#phase6{
+	background-color: grey;
+	background-image: linear-gradient(90deg, #b3b3b3,#666666);
+	height: 20%;
+	width: 100%;
+	margin-top: 0;
+	position: relative;
+}
+#phase6 img{
+	padding:0;
+    
+	display: block;
+	position: initial;
+
+}
+#phase6 a{
+
+    align-content:left;
+    margin-top: 0;
+    padding-left: 120;
+    margin-right: 0;
+    text-decoration: none;
+    font-size: 13px;
+    color:white;
+}
+
+#phase6 h1{
+
+	font-size: 25px;
+	text-align: center;
+	color:grey;
+
+
+}
+#phase7{
+	background-color: black;
+	
+	height: 20%;
+	width: 100%;
+	margin-top: 0;
+	position: relative;     
+
+}
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 20px 10px;
+
+}
+
+.fa:hover {
+    background-color: white;
+}
+
+.fa-facebook {
+  background: grey;
+  color: black;
+  border-radius: 170px;
+}
+/*.fa-facebook:hover{
+
+	background-color: white;
+}*/
+
+.fa-twitter {
+   background: grey;
+  color: black;
+  border-radius: 170px;
+}
+
+.fa-google {
+   background: grey;
+  color: black;
+  border-radius: 170px;
+}
+.fa-youtube {
+  background: grey;
+  color: black;
+  border-radius: 170px;
+}
+
+.fa-instagram {
+  background: grey;
+  color: black;
+  border-radius: 170px;
+}
+
+	</style>
+
+
+
+</head>
+
+<body >
+
+
+<div id="navbar">
+  <img src="E:\HTML\praslogo1.png" width="90" height="60" align="center" alt="logo">
+  <a href="#home">HOME</a>
+  <a href="#GAMES">GAMES</a>
+  <a href="E:/HTML/index.html">CAREERS</a>
+  <a href="#COMMUNITY">COMMUNITY</a>
+  <a href="#support">SUPPORT</a>
+  &emsp;<a href="registration.html" style="float: right;">Sign up</a>&emsp;
+  <a href="#" style="float: right;">|</a>
+  <a href="file:///E:/HTML/login.html" style="float: right;">login</a>
+  
+  
+  
+</div>
+
+    <div class="section">
+    	<h1>IMAGINE.CREATE.PLAY</h1>
+      <h3>CREATING WORLDS OF ADVENTURE, CONFLICT,</h3>
+      <p><b>AND COMPANIONSHIP THAT INSPIRE YOU TO BECOME THE HERO OF YOUR STORY.</b></p>
+   <div class="video-container">
+      <video autoplay loop muted id="video-bg">
+
+        <source src="FIFA 19 _ Official Reveal Trailer with UEFA Champions League.mp4" type="video/mp4">
+
+      </video>
+  </div>
+    </div>
+   </div>
+  
+
+
+
+
+
+   <div class="phase2">
+
+   	<h1 style="text-align: left;">GAMES</h1>
+   	<a href="#games"><h4>Know more >&emsp;&emsp;&emsp;&emsp;</h4></a>
+   	
+<div class="container">
+<a href="#ADVENTURE"><li><img src="red-dead-2.jpg" style="width: 200px" height="250x" class="image"></li></a>
+<div class="overlay">
+     <a href="#EXPLORE"><div class="text">EXPLORE</div></a>
+     <a href="#Trailer"><div class="text1">TRAILER</div></a>
+  </div>
+
+  </div>
+  
+  <div class="container">
+<a href="#shooting"><li><img src="card-cod-bo-4-964bdaf14e2a62de.jpg" style="width: 200px" height="250x" class="image"></li></a>
+<div class="overlay">
+     <a href="#EXPLORE"><div class="text">EXPLORE</div></a>
+     <a href="#Trailer"><div class="text1">TRAILER</div></a>
+  </div>
+  </div>
+
+<div class="container">
+<a href="#action"><li><img src="assassin's-creed.jpg" style="width: 200px" height="250x" class="image"></li></a>
+<div class="overlay">
+     <a href="#EXPLORE"><div class="text">EXPLORE</div></a>
+     <a href="#Trailer"><div class="text1">TRAILER</div></a>
+  </div>
+  </div>
+
+<div class="container">
+<a href="#sports"><li><img src="fifa-ney.jpg" style="width: 200px" height="250x" class="image"></li></a>
+<div class="overlay">
+     <a href="#EXPLORE"><div class="text">EXPLORE</div></a>
+     <a href="#Trailer"><div class="text1">TRAILER</div></a>
+  </div>
+  </div>
+
+<div class="container">
+<a href="#racing"><li><img src="NFS-Payback-Wallpaper-4.jpg" style="width: 200px" height="250x" class="image"></li></a>
+<div class="overlay">
+    <a href="#EXPLORE"><div class="text">EXPLORE</div></a>
+     <a href="#Trailer"><div class="text1">TRAILER</div></a>
+  </div>
+  </div>
+
+   	<br><br><br>
+   
+   
+  	<div class="text3">
+   	<hr style="color: white;">
+   	<center><h2 style="color: white;">All Games,One Site,Always Stay connected To Us,Start Your Carrer Now At Careers.pvt.net</h2></center>
+   	<hr style="color: white">
+   </div>
+</div>
+
+
+
+<div id="phase3">
+	
+	<img src="c1.jpg" style="width: 1263px" height="100%">
+    <div class="top-left">Create worlds</div>
+    <div class="top-left1">Learn more about Careers at PVT ENTERTAINMENT.</div>
+    <a href="#Careers"><div class="top-left2">Explore Careers</div></a>
+</div>
+
+
+
+<div id="phase4">
+
+	<img src="a1.jpg" style="width: 1263px" height="100%">
+
+	<div class="top-left">About Us</div>
+	<div class="top-left1">PVT Entertainment. is a global leader in digital interactive entertainment. PVT develops<br> and delivers games, content and online services for Internet-connected consoles, mobile<br> devices and personal computers.  has more than 300 million registered around the world.</div>
+	<a href="#about"><div class="top-left2">Know more</div></a>
+      
+
+</div>
+
+
+<div id="phase5">
+
+	<table>
+		<tr>
+			<th>
+				EXPLORE
+			</th>
+			<th>
+				GAMES
+			</th>
+			<th>
+				COMPANY
+			</th>
+			<th>
+				SUPPORT
+			</th>
+
+		</tr>
+		<tr>
+			<td>
+				About Us
+			</td>
+			<td>
+				Call Of Duty
+			</td>
+			<td>
+				Press Center
+			</td>
+			<td>
+				
+				Contact Us
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				Home
+			</td>
+			<td>
+				RDR-2
+			</td>
+			<td>
+				Educating Consumers
+			</td>
+			<td>
+				
+				My Account
+			</td>
+		</tr>
+
+
+
+		<tr>
+			<td>
+				Careers
+			</td>
+			<td>
+				Need For Speed
+			</td>
+			<td>
+				Investor Relation
+			</td>
+			<td>
+				Legal Info				
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				Games
+			</td>
+			<td>
+				Assasins-Creed
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				Privacy&Policy				
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Community
+			</td>
+			<td>
+				Fifa-19
+			</td>
+			<td>
+				
+			</td>
+			<td>
+								
+			</td>
+		</tr>
+
+	</table>
+	
+	
+</div>
+
+<div id="phase6">
+
+	<center><img src="E:\HTML\praslogo1.png" style="width: 100px" height="70px"></center>
+	<a href="#footer"> Get help</a>
+	<a href="#footer"> Careers</a>
+	<a href="#footer"> Online services</a>
+	<a href="#footer"> Advertise Us</a>
+	<a href="#footer"> About Us</a>
+	<a href="#footer"> privacy&policy</a>
+	
+	
+</div>
+
+<div id="phase7">
+    <center>
+	<a href="#fa-facebook" class="fa fa-facebook"></a>
+    <a href="#fa-twitter" class="fa fa-twitter"></a>
+    <a href="#fa-google" class="fa fa-google"></a>
+    <a href="#fa-youtube" class="fa fa-youtube"></a>
+    <a href="#fa-instagram" class="fa fa-instagram"></a>
+	</center>
+</div>
+
+
+    	
+    </body>
+
+
+
+    <script>
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-60px";
+  }
+
+    
+}
+</script>
+</html>

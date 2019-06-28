@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>register</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400|Raleway:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="animate.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Antic|Fredericka+the+Great|Lobster|Pacifico|Reem+Kufi|Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300|Open+Sans" rel="stylesheet">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@next/dist/aos.css">
+
+    <style type="text/css">
+
+        	 body {
+		 	
+     margin: 0;
+    font-weight: 300;
+    font-family: "roboto", sans-serif;
+    padding: 0;
+    background-color: black;
+    background-image: url("lbg.jpg");
+    background-size: cover;
+
+
+    
+
+    
+
+
+
+}
+
+#navbar {
+  z-index: 100;
+  background-color: transparent;
+  height: 9%;
+  position: fixed;
+  
+  width: 100%;
+  display: block;
+  
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding-left:13px;
+  padding-top: 18px;
+  padding-right: 6px;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: lighter;
+  translate: transform .2s;
+  overflow: hidden;
+  text-shadow:20px grey;
+}
+
+#navbar a:hover {
+  transform: scale(1.1,1.1);
+  transition: width 0.01s;
+}
+
+#navbar img {
+
+  float: left;
+  display: block;
+  padding-left:15px;
+  text-decoration: none;
+  translate: transform .2s;
+  overflow: hidden;
+  position: relative;
+  margin-top: 15px;
+}
+
+ .div2 p{
+       	font-family: 'Reem Kufi',sans-serif;
+       	margin-left: 100px;
+       	font-weight: bold;
+       	font-size:22px;
+       	margin-right: 0px;
+       	margin-top: 0px;
+       	margin-bottom: 0px;
+
+
+       }
+ 
+       /*.div2 input{
+       	font-family: 'Reem Kufi',sans-serif;
+       	font-size: 15px;
+       	
+       	border-top: none;
+       	border-left: none;
+       	border-right: none;
+       	padding-top: 20px;
+        padding-left: 6px;
+        padding-right: 6px;
+        padding-bottom: 5px;
+        border-radius: 30px;
+
+       }
+
+       .div2 input:focus {
+
+        border-radius: 30px;
+       	border-top-width: unset;
+       	text-decoration: none;
+       	text-decoration-style: unset;
+       	outline-color: transparent;
+       }*/
+   .div2 button{
+   	font-family: 'Reem Kufi',sans-serif;
+   	color: black;
+   	background-color: #cccccc;
+   	border-radius: 2px;
+   	box-shadow: 0px 2px 4px 0px grey;
+   	border:none;
+   	width: 23%;
+   	height: 6%;
+   	margin-left: 60px;
+   	margin-top: 7px;
+   	font-size: 20px;
+   	border-radius: 7px;
+   }
+   .div2 button:hover{
+   	transform: scale(1.1);
+   	background-color: white;
+   }
+  .fa {
+  padding: 8px;
+  font-size: 25px;
+  width: 28px;
+  text-align: center;
+  text-decoration: none;
+  margin-top:10px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  
+
+}
+.fa:hover{
+	transform: scale(1.1);
+	background-color: white;
+}
+   .fa-facebook {
+  background: #cccccc;
+  color: black;
+  
+  margin-left: 170px;
+}
+
+.fa-twitter {
+  background: #cccccc;
+  color: black;
+  margin-left: 5px;
+
+}
+
+.fa-google {
+  background: #cccccc;
+  color: black;
+  margin-left: 8px;
+}
+
+.group 			  { 
+  position:relative; 
+  margin-bottom:45px; 
+}
+input 				{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom:1px solid #cccccc;
+  background-color: transparent;
+}
+input:focus 		{ outline:none; }
+
+/* LABEL ======================================= */
+label 				 {
+  color:#cccccc; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+  top:-20px;
+  font-size:14px;
+  color:white;
+}
+
+/* BOTTOM BARS ================================= */
+/*.bar 	{ position:relative; display:block; width:300px; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:white; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:45%; 
+}
+
+ active state 
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:55%;
+}*/
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100%; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+
+.checkbox{
+            margin:0 auto;
+            margin-top: 25px;
+        }
+ #box{
+       font-family: 'Poppins', sans-serif;
+       font-weight: 400;
+       margin-right: 90px;
+        }
+
+
+
+</style>
+</head>
+
+
+<body>
+
+<div id="navbar">
+  <img src="E:\HTML\praslogo1.png" width="70px" height="40px" align="center" alt="logo">
+  <a href="file:///E:/HTML/pvt%20home.html">HOME</a>
+  <a href="#GAMES">GAMES</a>
+  <a href="#CAREERS">CAREERS</a>
+  <a href="#COMMUNITY">COMMUNITY</a>
+  <a href="#support">SUPPORT</a>
+ 
+  
+  
+  
+</div>
+<div class="div2" style="margin-left: 800px;position: absolute;">
+
+	<div class="log" style="height: 80%;width: 70%;background-color: transparent;margin-left:50px;border-radius:15px;margin-top: 60px;">
+		<p style="color: white;margin-left: 80px;font-size: 25px;padding-top: 30px;">Registration Form</p>
+		<img id="loh1" src="E:\HTML\praslogo1.png" style="margin-left: 100px;width: 40%;height: 36%;">
+		
+		<form>
+      
+      <div class="group">      
+      <input type="text" required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Name</label>
+      </div>
+      <div class="group">      
+      <input type="text" required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Username</label>
+      </div>
+		 <div class="group">      
+      <input type="Email" required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Email</label>
+      </div>
+		<div class="group">
+		<input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required >
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>Password</label>
+        </div>
+           
+    
+
+		
+		 
+       
+		<div class="group">
+		<button style="margin-left: 130px;"><a href="#Register" style="text-decoration: none;color:black;">Sign up</a></button>
+		</div>
+</form>
+		</div>
+</div>
+
+
+<script>
+var myInput = document.getElementById("psw");
+var letter = document.getElementById("letter");
+var capital = document.getElementById("capital");
+var number = document.getElementById("number");
+var length = document.getElementById("length");
+
+
+myInput.onkeyup = function() {
+  // Validate lowercase letters
+  var lowerCaseLetters = /[a-z]/g;
+  if(myInput.value.match(lowerCaseLetters)) {  
+    letter.classList.remove("invalid");
+    letter.classList.add("valid");
+  } else {
+    letter.classList.remove("valid");
+    letter.classList.add("invalid");
+  }
+  
+  // Validate capital letters
+  var upperCaseLetters = /[A-Z]/g;
+  if(myInput.value.match(upperCaseLetters)) {  
+    capital.classList.remove("invalid");
+    capital.classList.add("valid");
+  } else {
+    capital.classList.remove("valid");
+    capital.classList.add("invalid");
+  }
+
+  // Validate numbers
+  var numbers = /[0-9]/g;
+  if(myInput.value.match(numbers)) {  
+    number.classList.remove("invalid");
+    number.classList.add("valid");
+  } else {
+    number.classList.remove("valid");
+    number.classList.add("invalid");
+  }
+  
+  // Validate length
+  if(myInput.value.length >= 8) {
+    length.classList.remove("invalid");
+    length.classList.add("valid");
+  } else {
+    length.classList.remove("valid");
+    length.classList.add("invalid");
+  }
+}
+</script>
+
+</body>
+</html>
